@@ -1,4 +1,4 @@
-# variables.tf
-variable "region" {
-  default = "us-east-1"
+# output.tf
+output "instance_ip" {
+  value = aws_instance.web.public_ip
 }
